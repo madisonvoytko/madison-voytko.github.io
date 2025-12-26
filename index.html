@@ -25,24 +25,23 @@
         }
 
         header {
-            padding: 3rem 0 2rem;
-            border-bottom: 2px solid #e8dfd5;
-            margin-bottom: 4rem;
+    padding: 2rem 0 1.5rem;
+    border-bottom: 2px solid #e8dfd5;
+    margin-bottom: 3rem;
         }
 
-        h1 {
-            font-size: 3rem;
-            color: #c4956c;
-            margin-bottom: 0.5rem;
-        }
+         h1 {
+    font-size: 2.5rem;
+    color: #c4956c;
+    margin-bottom: 0.3rem;
+       }
 
         .subtitle {
-            color: #6b5d4f;
-            font-size: 0.95rem;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 1.5rem;
-        }
+    color: #6b5d4f;
+    font-size: 0.95rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+}
 
         .contact-links {
             display: flex;
@@ -51,13 +50,14 @@
         }
 
         .contact-links a {
-            color: #6b5d4f;
-            text-decoration: none;
-            padding: 0.6rem 1.2rem;
-            border: 1px solid #e8dfd5;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-        }
+    color: #6b5d4f;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid #e8dfd5;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
 
         .contact-links a:hover {
             background: #c4956c;
@@ -66,7 +66,7 @@
         }
 
         section {
-            margin-bottom: 5rem;
+            margin-bottom: 4rem;
         }
 
         h2 {
@@ -83,85 +83,137 @@
             color: #8b6f47;
             margin-bottom: 1rem;
         }
-
-        .about-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 3rem;
-    margin-top: 2rem;
-    align-items: start;
+/* ELEVATOR PITCH SECTION */
+.elevator-pitch {
+    background: linear-gradient(135deg, #ffffff 0%, #f5f1eb 100%);
+    padding: 2.5rem;
+    border-radius: 8px;
+    border-left: 5px solid #c4956c;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-        .about-main {
+.elevator-pitch h3 {
+    color: #c4956c;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.elevator-pitch p {
+    font-size: 1.1rem;
+    color: #2c2419;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.elevator-pitch p:last-child {
+    margin-bottom: 0;
+}
+
+.focus-areas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+}
+
+.focus-areas span {
+    background: #c4956c;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* ABOUT SECTION - Streamlined */
+.about-content {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 8px;
+    border: 1px solid #e8dfd5;
+    margin-bottom: 2rem;
+}
+
+.about-content p {
     color: #6b5d4f;
     line-height: 1.8;
-    padding-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
 }
 
-        .about-main p {
-            margin-bottom: 1.5rem;
-            font-size: 1.05rem;
-        }
+.about-content .emphasis {
+    color: #c4956c;
+    font-weight: 600;
+}
 
-        /* Better text emphasis styling */
-        .about-main .emphasis {
-            color: #c4956c;
-            font-weight: 600;
-        }
+.about-content h3 {
+    font-size: 1.2rem;
+    color: #8b6f47;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
 
-        .about-main .italic-emphasis {
-        font-style: italic;
-        color: #8b6f47;
-        }
+.about-content ul {
+    margin-left: 1.5rem;
+    color: #6b5d4f;
+    line-height: 1.8;
+}
 
-        .about-sidebar {
-            background: white;
-            padding: 2rem;
-            border: 1px solid #e8dfd5;
-            border-radius: 8px;
-            height: fit-content;
-        }
+.about-content li {
+    margin-bottom: 0.8rem;
+}
 
-        .about-sidebar h3 {
-            font-size: 1.1rem;
-            margin-bottom: 1rem;
-            color: #c4956c;
-        }
+/* QUICK FACTS - Horizontal layout */
+.quick-facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    background: #f5f1eb;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
 
-        .about-sidebar ul {
-            list-style: none;
-        }
+.quick-fact-item {
+    text-align: center;
+}
 
-        .about-sidebar li {
-            padding: 0.5rem 0;
-            color: #6b5d4f;
-            border-bottom: 1px solid #f5f1eb;
-        }
+.quick-fact-item strong {
+    display: block;
+    color: #c4956c;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.3rem;
+}
 
-        .about-sidebar li:last-child {
-            border-bottom: none;
-        }
+.quick-fact-item span {
+    color: #2c2419;
+    font-size: 1rem;
+}
 
-       /* MENTAL HEALTH SECTION - Now in sidebar */
+/* MENTAL HEALTH SECTION - Compact */
 .mental-health-section {
     background: linear-gradient(135deg, #f5f1eb 0%, #faf8f5 100%);
-    padding: 1.5rem;
+    padding: 2rem;
     border-left: 4px solid #c4956c;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(196, 149, 108, 0.1);
+    margin-bottom: 2rem;
 }
 
 .mental-health-section h3 {
     color: #8b6f47;
-    margin-bottom: 0.8rem;
-    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
 }
 
 .mental-health-section p {
     color: #6b5d4f;
     line-height: 1.7;
-    margin-bottom: 0.8rem;
-    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
 }
 
 .mental-health-section p:last-child {
@@ -354,47 +406,48 @@
         }
 
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-            
-            .about-grid {
-                grid-template-columns: 1fr;
-            }
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .quick-facts {
+        grid-template-columns: 1fr;
+    }
 
-            .timeline {
-                padding-left: 0;
-            }
+    .timeline {
+        padding-left: 0;
+    }
 
-            .timeline::before {
-                display: none;
-            }
+    .timeline::before {
+        display: none;
+    }
 
-            .timeline-item {
-                padding-left: 0;
-            }
+    .timeline-item {
+        padding-left: 0;
+    }
 
-            .timeline-item::before {
-                display: none;
-            }
+    .timeline-item::before {
+        display: none;
+    }
+}
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-    <div style="display: flex; align-items: center; justify-content: space-between; gap: 3rem;">
-        <!-- Profile Picture - LEFT SIDE -->
-        <div style="flex-shrink: 0; width: 220px; height: 220px; border-radius: 50%; overflow: hidden; border: 5px solid #c4956c; box-shadow: 0 6px 20px rgba(196, 149, 108, 0.4);">
-    <img src="images/voytko_headshot.JPG" alt="Madison Voytko" style="width: 310px; height: 310px; object-fit: cover; object-position: center 30%; margin-left: -45px; margin-top: -70px;">
-</div>
+    <div style="display: flex; align-items: center; gap: 2.5rem;">
+        <!-- Profile Picture - Smaller, LEFT SIDE -->
+        <div style="flex-shrink: 0; width: 140px; height: 140px; border-radius: 50%; overflow: hidden; border: 4px solid #c4956c; box-shadow: 0 4px 12px rgba(196, 149, 108, 0.3);">
+            <img src="images/voytko_headshot.JPG" alt="Madison Voytko" style="width: 200px; height: 200px; object-fit: cover; object-position: center 30%; margin-left: -30px; margin-top: -45px;">
+        </div>
         
-        <!-- Header Content - RIGHT SIDE -->
-        <div style="flex-grow: 1; text-align: right;">
+        <!-- Header Content - LEFT ALIGNED -->
+        <div style="flex-grow: 1;">
             <h1>Madison Voytko</h1>
-            <p class="subtitle">Biomedical Engineering - Mechanical Systems & Research</p>
-            <div class="contact-links" style="justify-content: flex-end;">
-                <a href="mailto:Madison.Voytko@colorado.edu">Email</a>
+            <p class="subtitle">Biomedical Engineering • Mechanical Systems & Research</p>
+            <div class="contact-links">
+                <a href="mailto:Madison.Voytko@colorado.edu">Madison.Voytko@colorado.edu</a>
                 <a href="https://www.linkedin.com/in/madison-voytko/" target="_blank">LinkedIn</a>
                 <a href="https://github.com/madisonvoytko" target="_blank">GitHub</a>
                 <a href="Madison_Voytko_Resume.pdf" target="_blank">Resume</a>
@@ -415,75 +468,74 @@
         </nav>
 
         <main>
-            <h3 style="margin-top: 0;">What I Do</h3>
-<p style="font-size: 1.15rem; color: #2c2419; font-weight: 500;">
-    Biomedical Engineering student focused on <span class="emphasis">mechanical systems</span> and <span class="emphasis">medical device development</span> for high-impact, real-world applications.
-</p>
 
-<div class="focus-areas">
-    <span>Medical Devices</span>
-    <span>Biomechanics</span>
-    <span>Mechanical Systems</span>
-    <span>Defense Engineering</span>
-    <span>Bioprocessing</span>
+<!-- ELEVATOR PITCH -->
+<div class="elevator-pitch">
+    <h3>What I Do</h3>
+    <p>
+        I'm a biomedical engineering student specializing in <span class="emphasis">mechanical systems</span> and <span class="emphasis">medical device development</span>. I design and validate devices that solve complex problems in biomechanics, bioprocessing, and defense engineering—translating biological challenges into testable, functional systems.
+    </p>
+    <div class="focus-areas">
+        <span>Medical Devices</span>
+        <span>Biomechanics</span>
+        <span>Mechanical Systems</span>
+        <span>Defense Engineering</span>
+        <span>Bioprocessing</span>
+    </div>
 </div>
 
-           <section class="about" id="about">
+<section class="about" id="about">
     <h2>Why I Engineer</h2>
-    <div class="about-grid">
-        <!-- LEFT COLUMN: Main Content -->
-        <div class="about-main">
-           <p>
-    Seeing the world’s first prosthetic tail restore a dolphin’s ability to swim sparked my fascination with 
-    <span class="emphasis">mechanical systems</span> and solving problems that hadn’t been solved before. 
-    It showed me that engineering isn’t just about building things, it’s about pushing boundaries where solutions don’t yet exist.
-</p>
+    
+    <div class="about-content">
+        <p>
+            Seeing the world's first prosthetic tail restore a dolphin's ability to swim sparked my fascination with <span class="emphasis">mechanical systems</span> and solving problems that hadn't been solved before. It showed me that engineering isn't just about building things—it's about pushing boundaries where solutions don't yet exist.
+        </p>
+        <p>
+            Today, I'm drawn to challenges where <span class="emphasis">innovation meets real-world impact</span>: novel medical devices that restore mobility, defense systems that protect lives, bioprocessing platforms that enable new therapies. If the problem is complex, the solution isn't obvious, and the stakes are high, that's where I want to be.
+        </p>
 
+        <h3>How I Approach Engineering</h3>
+        <ul>
+            <li>Translate biological problems into measurable mechanical systems</li>
+            <li>Validate designs through testing, iteration, and data</li>
+            <li>Design with real-world constraints and downstream impact in mind</li>
+        </ul>
+    </div>
 
-            <p>
-                Today, I'm drawn to challenges where <span class="emphasis">innovation meets real-world impact</span>: novel medical devices that restore mobility, defense systems that protect lives, bioprocessing platforms that enable new therapies. If the problem is complex, the solution isn't obvious, and the stakes are high, that's where I want to be.
-            </p>
+    <!-- QUICK FACTS - Horizontal -->
+    <div class="quick-facts">
+        <div class="quick-fact-item">
+            <strong>Education</strong>
+            <span>University of Colorado Boulder</span>
         </div>
-
-<h3>How I Approach Engineering</h3>
-<ul style="margin-left: 1.5rem; color: #6b5d4f; line-height: 1.8;">
-    <li>Translate biological problems into measurable mechanical systems</li>
-    <li>Validate designs through testing, iteration, and data</li>
-    <li>Design with real-world constraints and downstream impact in mind</li>
-</ul>
-
-        <!-- RIGHT COLUMN: Sidebars stacked -->
-        <div style="display: flex; flex-direction: column; gap: 2rem;">
-            <div class="about-sidebar">
-                <h3>Quick Facts</h3>
-                <ul>
-                    <li><strong>Graduation:</strong> May 2026</li>
-                    <li><strong>Education:</strong> University of Colorado-Boulder</li>
-                    <li><strong>Major:</strong> Biomedical Engineering</li>
-                    <li><strong>Minor:</strong> Materials Science</li>
-                    <li><strong>Location:</strong> Boulder, CO</li>
-                </ul>
-
-                <h3 style="margin-top: 2rem;">Involvements</h3>
-                <ul>
-                    <li>Society of Women Engineers</li>
-                    <li>MPOWR Kickboxing</li>
-                    <li>CU Boulder Hiking Club</li>
-                    <li>Robbie's Hope Ambassador</li>
-                </ul>
-            </div>
-
-            <!-- Mental Health in sidebar -->
-            <div class="mental-health-section" style="margin-top: 2rem;">
-                <h3>Mental Health Advocacy</h3>
-                <p>
-                    Beyond engineering, I'm committed to promoting teen mental health and suicide prevention. I serve as an ambassador for <strong>Robbie's Hope</strong>, a movement of teens helping teens with the mission to cut teen suicide rates in half by 2028. In September 2025, I ran the <strong>Boulderthon marathon</strong> in memory of a close friend, raising awareness and funds to support mental health resources.
-                </p>
-                <p>
-                    This work reinforces why I'm drawn to biomedical engineering: using technical skills to develop solutions that genuinely improve people's lives.
-                </p>
-            </div>
+        <div class="quick-fact-item">
+            <strong>Major</strong>
+            <span>Biomedical Engineering</span>
         </div>
+        <div class="quick-fact-item">
+            <strong>Minor</strong>
+            <span>Materials Science</span>
+        </div>
+        <div class="quick-fact-item">
+            <strong>Graduation</strong>
+            <span>May 2026</span>
+        </div>
+        <div class="quick-fact-item">
+            <strong>Location</strong>
+            <span>Boulder, CO</span>
+        </div>
+    </div>
+
+    <!-- MENTAL HEALTH -->
+    <div class="mental-health-section">
+        <h3>Mental Health Advocacy</h3>
+        <p>
+            Beyond engineering, I'm committed to promoting teen mental health and suicide prevention. I serve as an ambassador for <strong>Robbie's Hope</strong>, a movement of teens helping teens with the mission to cut teen suicide rates in half by 2028. In September 2025, I ran the <strong>Boulderthon marathon</strong> in memory of a close friend, raising awareness and funds to support mental health resources.
+        </p>
+        <p>
+            This work reinforces why I'm drawn to biomedical engineering: using technical skills to develop solutions that genuinely improve people's lives.
+        </p>
     </div>
 </section>
             </section>
